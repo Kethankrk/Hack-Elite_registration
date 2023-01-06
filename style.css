@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,700;1,900&family=Russo+One&display=swap');
+*{
+    box-sizing: border-box;
+    /* max-width: 100wh; */
+}
+body {
+    margin: 0;
+    /* height: 150vh; */
+    width: 100%;
+    /* overflow: hidden; */
+    font-family: "Lato",sans-serif;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(39, 39, 39);
+    background-color: #ecf0f3;
+
+}
+.register-div{
+    width: 80%;
+    margin:50px 0px;
+    max-width: 1000px;
+    padding: 60px 35px 35px 35px;
+    border-radius: 40px;
+    background-color: #ecf0f3;
+    box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #fff;
+}
+.title{
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 0.5px;
+}
+.sub-title{
+    text-align: center;
+    font-size: 1rem;
+    padding-top: 7px;
+    letter-spacing: 3px;
+}
+.fields{
+    width: 100%;
+    padding: 75px 5px 5px 5px;
+}
+.fields input{
+    border: none;
+    background:none;
+    outline: none;
+    font-size:18px;
+    color: #555;
+    padding: 20px 10px 20px 5px;
+    width: 100%;
+}
+.college{
+    box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px -8px -8px #fff;    
+}
+.button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    background-color: #02c8db;
+    box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #fff;
+    font-family:"Lato",sans-serif ;
+}
+.button:hover{
+    background-color:#50e5cc;
+}
+.button:active{
+    background-color: #00ff0d;
+} 
+form .txt_field{
+    position: relative;
+    /* border-bottom: 2px solid #adadad; */
+    margin: 40px 0;
+
+  }
+  .txt_field input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.404);
+    background:none;
+    outline: none;
+    font-size:18px;
+    color: #555;
+    padding: 20px 10px 20px 5px;
+    width: 100%;
+  }
+  .txt_field label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #868383;
+    transform: translateY(-50%);
+    font-size:18px;       
+    pointer-events: none;
+    transition: .5s;
+  }
+  .txt_field span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0%;
+    width: 0%;
+    height: 2px;
+    background: #02c8db;
+    transition: .5s;
+  }
+  .txt_field input:focus ~ label,
+  .txt_field input:valid ~ label{
+    top: -5px;
+    color: #a6a6a6;
+  }
+  .txt_field input:focus ~ span::before,
+  .txt_field input:valid ~ span::before{
+    width: 100%;
+  }
+@media only screen and (max-width:515px) {
+    .txt_field label{
+        font-size:14px;       
+      }
+      .register-div{
+        width: 90%;
+    }
+}
